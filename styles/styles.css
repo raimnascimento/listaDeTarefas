@@ -1,0 +1,148 @@
+body {
+    background-color: #070d19;
+    color: #eaeef6;
+    font-family: "Lexend", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.container-list {
+    padding: 2rem 0;
+    background-color: #13419f;
+    border-radius: 2rem;
+    width: 60%;
+    min-height: 80vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.title-list {
+    font-size: 1.8rem;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.to-do-list {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: .5rem;
+    width: 100%;
+}
+
+.input-container {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    align-items: center;
+    margin-top: 1.5rem;
+}
+
+.input-container input {
+    border: none;
+    padding: .7rem;
+    font-size: 1rem;
+    width: 100%;
+    border-radius: .5rem;
+    color: #222222;
+    box-shadow: 0 0.4rem #dfd9d9;
+    cursor: pointer;
+}
+
+.input-container input:focus {
+    outline-color: #1C5D99;
+    box-shadow: 0 0.4rem #dfd9d9;
+}
+
+.container-button {
+    display: flex;
+    flex-direction: row;
+    gap: .6rem;
+}
+
+button {
+    font-size: .9em;
+    width: 150px;
+    padding: .5rem;
+    border: none;
+    border-radius: .5rem;
+    transition: all 0.3s;
+    cursor: pointer;
+    background: #070d19;
+    color: #fff;
+    font-weight: 550;
+    margin-bottom: 1.3rem;
+}
+
+button:hover {
+    background: #070d19;
+    color: #fff;
+    font-size: 1em;
+}
+
+.button-reset {
+    background: #8baae8;
+    color: #070d19;
+}
+
+.button-reset:hover {
+    color: #fff;
+    background: #7a7a7a;
+}
+
+.checkbox {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: .3rem;
+}
+
+.checkbox input[type="checkbox"] {
+    width: .8rem;
+    height: .8rem;
+    cursor: pointer;
+}
+
+.tarefa-vazia {
+    text-align: center;
+}
+
+.item-list {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    column-gap: 1rem;
+}
+
+.checkbox-hour {
+    font-size: .7rem;
+    color: #fff;
+}
+
+
+@media screen and (max-width: 768px) {
+
+    .container-list {
+        width: 80%;
+    }
+    
+    button {
+        font-size: 1em;
+        width: 190px;
+        padding: .6rem;
+    }
+    
+    .checkbox input[type="checkbox"] {
+        width: .9rem;
+        height: .9rem;
+    }
+}
