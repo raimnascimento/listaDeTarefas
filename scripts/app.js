@@ -10,7 +10,6 @@ mensagemTarefaVazia.innerHTML = `<p>Você ainda não tem nenhuma tarefa adiciona
 botaoAdicionar.addEventListener('click', function (evento) {
     evento.preventDefault();
 
-
     criandoLista();
     mensagemTarefaVazia.innerHTML = '';
 });
